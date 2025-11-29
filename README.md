@@ -1,108 +1,86 @@
-Zoom Clone — Next.js & TypeScript
-🤖 Introduction
+# Zoom Clone — Next.js & TypeScript
+
+## 🤖 Introduction
 
 This project is a Zoom-like video conferencing app built using Next.js and TypeScript. With it, users can sign in securely, start or join meetings, and use features like recording, screen sharing, and managing participants.
 
-If you ever need help or run into bugs, there’s a large Discord community of over 30,000 developers who are always helping each other out.
+If you ever need help or run into bugs, there's a large Discord community of over 30,000 developers who are always helping each other out.
 
-⚙️ Tech Stack
+## ⚙️ Tech Stack
 
-Next.js
+- **Next.js** - React framework for production
+- **TypeScript** - Type-safe JavaScript
+- **Clerk** - Authentication and user management
+- **getstream** - Real-time video infrastructure
+- **shadcn** - UI component library
+- **Tailwind CSS** - Utility-first CSS framework
 
-TypeScript
+## 🔋 Features
 
-Clerk
-
-getstream
-
-shadcn
-
-Tailwind CSS
-
-🔋 Features
-👉 Authentication
-
+### 👉 Authentication
 Secure login using Clerk, supporting both social login and email/password sign-in.
 
-👉 Start a New Meeting
-
+### 👉 Start a New Meeting
 Launch a meeting instantly after choosing your camera and mic settings.
 
-👉 Meeting Controls
-
+### 👉 Meeting Controls
 Participants can:
+- Record the meeting
+- React with emojis
+- Share their screen
+- Mute/unmute
+- Adjust audio
+- Switch layouts
+- Open the participant list
+- Pin/mute/unmute/block others
+- Allow video sharing
 
-Record the meeting
-
-React with emojis
-
-Share their screen
-
-Mute/unmute
-
-Adjust audio
-
-Switch layouts
-
-Open the participant list
-
-Pin/mute/unmute/block others
-
-Allow video sharing
-
-👉 Leaving or Ending the Meeting
-
+### 👉 Leaving or Ending the Meeting
 Participants can leave anytime. The meeting host can end the meeting for everyone.
 
-👉 Schedule Meetings
+### 👉 Schedule Meetings
+Set up meetings for a later time. You'll find them in the Upcoming Meetings section for easy sharing or starting.
 
-Set up meetings for a later time. You’ll find them in the Upcoming Meetings section for easy sharing or starting.
-
-👉 Past Meetings
-
+### 👉 Past Meetings
 View details of previous meetings.
 
-👉 Recorded Meetings
+### 👉 Recorded Meetings
+Watch recordings of meetings you've attended or hosted.
 
-Watch recordings of meetings you’ve attended or hosted.
-
-👉 Personal Room
-
+### 👉 Personal Room
 Each user gets a permanent personal meeting link to share with anyone.
 
-👉 Join with a Link
+### 👉 Join with a Link
+Simply paste a meeting link to join someone else's session.
 
-Simply paste a meeting link to join someone else’s session.
-
-👉 Secure Real-time System
-
+### 👉 Secure Real-time System
 All activities update instantly and securely, keeping user data safe.
 
-👉 Fully Responsive
-
+### 👉 Fully Responsive
 Works smoothly on all screen sizes, from phones to desktops.
 
-🤸 Quick Start
-Prerequisites
+## 🤸 Quick Start
+
+### Prerequisites
 
 Before installing, make sure you have:
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-Git
+### Clone the Repository
 
-Node.js
-
-npm
-
-Clone the Repository
 git clone https://github.com/adrianhajdin/zoom-clone.git
 cd zoom-clone
 
-Install Dependencies
+
+### Install Dependencies
 npm install
 
-Add Environment Variables
 
-Create a .env file in the project root:
+### Add Environment Variables
+Create a `.env` file in the project root:
+
 
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
@@ -116,9 +94,5 @@ STREAM_SECRET_KEY=
 
 Fill in your actual Clerk and getstream credentials.
 
-Run the App
+### Run the App
 npm run dev
-
-
-Then open:
-http://localhost:3000
