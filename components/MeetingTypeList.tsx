@@ -42,7 +42,7 @@ const MeetingTypeList = () => {
       if (!call) throw new Error("Failed to create meeting");
       const startsAt =
         values.dateTime.toISOString() || new Date(Date.now()).toISOString();
-      const description = values.description || "Instant Meeting";
+      const description = values.description.substring || "Instant Meetings";
       await call.getOrCreate({
         data: {
           starts_at: startsAt,
@@ -73,26 +73,27 @@ const MeetingTypeList = () => {
         title="New Meeting"
         description="Start an instant meeting"
         handleClick={() => setMeetingState("isInstantMeeting")}
+        className="bg-orange-500"
       />
       <HomeCard
         img="/icons/join-meeting.svg"
         title="Join Meeting"
         description="via invitation link"
-        className="bg-blue-1"
+        className="bg-blue-500"
         handleClick={() => setMeetingState("isJoiningMeeting")}
       />
       <HomeCard
         img="/icons/schedule.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
-        className="bg-purple-1"
+        className="bg-purple-700"
         handleClick={() => setMeetingState("isScheduleMeeting")}
       />
       <HomeCard
         img="/icons/recordings.svg"
         title="View Recordings"
         description="Meeting Recordings"
-        className="bg-yellow-1"
+        className="bg-yellow-500"
         handleClick={() => router.push("/recordings")}
       />
 
@@ -108,7 +109,7 @@ const MeetingTypeList = () => {
               Add a description
             </label>
             <Textarea
-              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+              className="border-none bg-two focus-visible:ring-0 focus-visible:ring-offset-0"
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
               onChange={(e:any) =>
                 setValues({ ...values, description: e.target.value })
@@ -116,7 +117,7 @@ const MeetingTypeList = () => {
             />
           </div>
           <div className="flex w-full flex-col gap-2.5">
-            <label className="text-base font-normal leading-[22.4px] text-sky-2">
+            <label className="text-base font-normal leading-[22.4px] text-blue-400">
               Select Date and Time
             </label>
             <ReactDatePicker
@@ -127,7 +128,7 @@ const MeetingTypeList = () => {
               timeIntervals={15}
               timeCaption="time"
               dateFormat="MMMM d, yyyy h:mm aa"
-              className="w-full rounded bg-dark-3 p-2 focus:outline-none"
+              className="w-full rounded bg-two p-2 focus:outline-none"
             />
           </div>
         </MeetingModal>

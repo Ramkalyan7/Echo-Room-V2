@@ -63,11 +63,11 @@ const PersonalRoom = () => {
         <Table title="Invite Link" description={meetingLink} />
       </div>
       <div className="flex gap-5">
-        <Button className="bg-blue-1" onClick={startRoom}>
+        <Button className="bg-blue" onClick={startRoom}>
           Start Meeting
         </Button>
         <Button
-          className="bg-dark-3"
+          className="bg-two"
           onClick={() => {
             navigator.clipboard.writeText(meetingLink);
             toast( "Link Copied");

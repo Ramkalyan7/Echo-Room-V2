@@ -29,7 +29,7 @@ const MobileNav = () => {
         <SheetContent
           title="content"
           side="left"
-          className="border-none bg-black "
+          className="border-none bg-one "
         >
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
 

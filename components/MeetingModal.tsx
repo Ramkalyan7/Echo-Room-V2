@@ -1,6 +1,6 @@
 "use client";
 import { ReactNode } from "react";
-import { Dialog, DialogContent } from "./ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "./ui/dialog";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -32,7 +32,11 @@ const MeetingModal = ({
 }: MeetingModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="flex w-full max-w-[520px] flex-col gap-6 border-none bg-black px-6 py-9 text-white">
+      <DialogContent
+        className="flex w-full max-w-[520px] flex-col gap-6 border-none bg-one px-6 py-9 text-white"
+      >
+        <DialogTitle></DialogTitle>
+        {children}
         <div className="flex flex-col gap-6">
           {image && (
             <div className="flex justify-center">
@@ -45,7 +49,7 @@ const MeetingModal = ({
           {children}
           <Button
             className={
-              "bg-blue-600 focus-visible:ring-0 focus-visible:ring-offset-0"
+              "bg-blue focus-visible:ring-0 focus-visible:ring-offset-0"
             }
             onClick={handleClick}
           >

@@ -159,6 +159,24 @@
   filter: invert(1);
 }
 
+.cl-socialButtonsIconButton__github{
+  background-color: #161925;
+}
+
+.cl-button__google{
+  background-color: #161925;
+}
+.cl-socialButtonsIconButton__linkedin_oidc{
+  background-color: #161925;
+}
+.cl-socialButtonsBlockButtonText__google{
+  color: rgb(196, 189, 189);
+}
+.cl-formFieldInputShowPasswordButton{
+  color: white;
+}
+
+
 .cl-userButtonPopoverActionButtonIcon {
   color: white;
 }
@@ -181,6 +199,7 @@
 .cl-userButtonPopoverActionButton {
   color: white;
 }
+
 
 /* animation */
 
@@ -205,4 +224,20 @@
 
 .bg-hero-image{
   background-image: url("/images/hero-background.png");
+}
+
+.bg-one{
+  background-color: #161925;
+}
+
+.bg-two{
+  background-color: #1c1f2e;
+}
+
+.bg-blue{
+  background-color: #0e78f9;
+}
+
+button{
+  cursor: pointer;
 }
