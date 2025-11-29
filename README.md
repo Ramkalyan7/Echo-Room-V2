@@ -1,10 +1,9 @@
-# Zoom Clone — Next.js & TypeScript
+# Echo Room — Next.js & TypeScript
 
 ## 🤖 Introduction
 
 This project is a Zoom-like video conferencing app built using Next.js and TypeScript. With it, users can sign in securely, start or join meetings, and use features like recording, screen sharing, and managing participants.
 
-If you ever need help or run into bugs, there's a large Discord community of over 30,000 developers who are always helping each other out.
 
 ## ⚙️ Tech Stack
 
@@ -60,13 +59,6 @@ All activities update instantly and securely, keeping user data safe.
 Works smoothly on all screen sizes, from phones to desktops.
 
 ## 🤸 Quick Start
-
-### Prerequisites
-
-Before installing, make sure you have:
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
 
 ### Clone the Repository
 
